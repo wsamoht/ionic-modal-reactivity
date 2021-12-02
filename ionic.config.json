@@ -1,0 +1,7 @@
+{
+  "name": "ionic-modal-reactivity",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

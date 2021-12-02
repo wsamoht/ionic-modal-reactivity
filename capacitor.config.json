@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ionic-modal-reactivity",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
