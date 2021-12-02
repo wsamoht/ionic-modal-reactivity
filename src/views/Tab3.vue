@@ -1,28 +1,40 @@
 <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Tab 3</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 3</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      
-      <ExploreContainer name="Tab 3 page" />
-    </ion-content>
-  </ion-page>
+    <ion-page>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Without Modal</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content :fullscreen="true">
+            <ion-header collapse="condense">
+                <ion-toolbar>
+                    <ion-title size="large">Without Modal</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <WithoutModal />
+        </ion-content>
+    </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import {
+    IonPage,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+} from "@ionic/vue";
+import WithoutModal from "@/components/WithoutModal.vue";
 
-export default  {
-  name: 'Tab3',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
-}
+export default {
+    name: "Tab3",
+    components: {
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonContent,
+        IonPage,
+        WithoutModal,
+    },
+};
 </script>
