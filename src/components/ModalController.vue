@@ -6,12 +6,12 @@ import ModalControllerComponent from "./ModalControllerComponent.vue";
 export default defineComponent({
     name: "ModalController",
     async setup() {
-        let showText = false;
+        const showText = ref(false);
 
         const toggleText = (): void => {
-            showText = !showText;
+            showText.value = !showText.value;
 
-            console.log(`showText = ${showText}`);
+            console.log(`showText = ${showText.value}`);
         };
 
         const modal = await modalController.create({
